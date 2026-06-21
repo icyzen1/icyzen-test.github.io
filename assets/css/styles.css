@@ -1,0 +1,141 @@
+@import url(_variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px auto 0;
+    background-color: #101012c2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 22px;
+    border-radius: 15px;
+}
+
+.logo-text {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--db-color);
+    text-decoration: none;
+    transition: color .2s, opacity .2s;
+    cursor: pointer;
+}
+
+.navbar a:hover {
+    color: var(--text-color);
+}
+
+.header-auth-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header-auth-link,
+.header-auth-primary {
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 11px;
+    padding: 0 18px;
+    transition: transform .2s, border-color .2s, color .2s, background .2s;
+    display: inline-flex;
+}
+
+.header-auth-link:hover {
+    background-color: #ffffff08;
+    color: var(--text-color);
+}
+
+.header-auth-primary {
+    color: #090909 !important;
+    background-color: #fff;
+}
+
+.header-auth-primary:hover {
+    transform: translateY(-2px);
+    transition: transform .2s;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: calc(100vh - 74px);
+    text-align: center;
+}
+
+.hero-title {
+    margin: 0 auto;
+    letter-spacing: 2px;
+    width: 55%;
+    margin-top: 200px;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    color: var(--db-color);
+    margin-bottom: 25px;
+}
+
+button {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: 16px 24px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-button-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-fill {
+    background-color: var(--accent);
+}
+
+.btn-fill:hover {
+    background-color: #5528a2;
+}
+
+.btn-sup {
+    background-color: rgb(38, 38, 48);
+}
+
+.btn-sup:hover {
+    background-color: rgb(31, 31, 40);
+}
