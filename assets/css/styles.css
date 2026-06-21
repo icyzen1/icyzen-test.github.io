@@ -13,6 +13,7 @@ body {
     background-color: var(--bg-color);
     overflow-x: hidden;
     position: relative;
+    margin: 20px;
 }
 
 .header {
@@ -89,7 +90,7 @@ body {
 
 .hero-section {
     width: 100%;
-    min-height: calc(100vh - 74px);
+    min-height: calc(80vh - 74px);
     text-align: center;
 }
 
@@ -138,4 +139,114 @@ button {
 
 .btn-sup:hover {
     background-color: rgb(31, 31, 40);
+}
+
+.features-section {
+    margin-top: 100px;
+    min-height: 600px;
+    text-align: center;
+}
+
+.why-sacred {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.features-title {
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.features-description {
+    color: var(--db-color)
+}
+
+.features-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features-card {
+    width: 100%;
+    max-width: 350px;
+    min-height: 140px;
+    padding: 20px;
+    border: 1px solid rgb(45, 45, 46);
+    background-color: rgba(255, 255, 255, .02);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-num {
+    color: var(--accent)
+}
+
+.card-icon {
+    color: rgb(79, 79, 87);
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.card-db {
+    font-size: 14px;
+    color: var(--db-color)
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cta {
+    width: 100%;
+    max-width: 1280px;
+    background-color: var(--accent2);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.cta-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.cta-description {
+    color: var(--db-color);
+    margin-bottom: 15px;
+}
+
+.cta-button-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-btn-fill {
+    background-color: rgb(38, 38, 48);
+}
+
+.cta-btn-fill:hover {
+    background-color: rgb(31, 31, 40);
+}
+
+.cta-icon {
+    font-size: 10px;
+    margin-left: 5px;
 }
