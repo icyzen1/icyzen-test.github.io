@@ -5,17 +5,18 @@ async function changeContent(fileName) {
         if (!response.ok) throw new Error('File not found');
         const htmlText = await response.text();
         main.innerHTML = htmlText;
+
     } catch (error) {
         main.innerHTML = `<p style="color: red; padding: 20px;">Error: ${error.message}</p>`;
     }
 }
 
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); 
-        const fileToLoad = event.target.getAttribute('href');
-        changeContent(fileToLoad);
-    });
+document.addEventListener('click', (event) => {
+    const linkElement = event.target.closest('.nav-link');
+    if (!linkElement) return;
+    event.preventDefault(); 
+    const fileToLoad = linkElement.getAttribute('href');
+    changeContent(fileToLoad);
 });
 
 const options = {
