@@ -10,93 +10,136 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header animate-text">
         <a href="" class="logo">
-            <span class="logo-mark"></span>
+            <span class="logo-mark"><img src="assets/img/logo.png" alt=""></span>
             <span class="logo-text">Sacred</span>
         </a>
         <nav class="navbar">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Term of Service</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class = "nav-link">Products</a></li>
+                <li><a href="privacy.html" class = "nav-link">Privacy Policy</a></li>
+                <li><a href="terms.html" class = "nav-link">Term of Service</a></li>
             </ul>
         </nav>
         <div class="header-right">
             <div class="header-auth-actions">
-                <a href="" class="header-auth-link">Sign In</a>
-                <a href="" class="header-auth-primary">Sign Up</a>
+                <a href="login.html" class="header-auth-link nav-link">Sign In</a>
+                <a href="registration.html" class="header-auth-primary nav-link">Sign Up</a>
             </div>
         </div>
     </header>
 
-    <section class="hero-section">
-        <h1 class="hero-title">Почуствуй превосходство с нашим решением</h1>
-        <p class="hero-description">Современные функции, надежная защита, быстрая производительность, частые обновления.
-        </p>
-        <div class="hero-button-actions">
-            <button class="btn-fill">
-                <span><i class="fa-regular fa-user"></i></span>
-                Начать сейчас
-            </button>
-            <button class="btn-sup">
-                <span><i class="fa-solid fa-headset"></i></span>
-                Поддержка
-            </button>
-        </div>
-    </section>
+    <main id = "content-area">
+        <section class="hero-section">
+            <h1 class="hero-title animate-box slide-left">Почуствуй превосходство с нашим решением</h1>
+            <p class="hero-description animate-box slide-right">Современные функции, надежная защита, быстрая производительность, частые
+                обновления.
+            </p>
+            <div class="hero-button-actions animate-text">
+                <button class="btn-fill">
+                    <span><i class="fa-regular fa-user"></i></span>
+                    Начать сейчас
+                </button>
+                <button class="btn-sup">
+                    <span><i class="fa-solid fa-headset"></i></span>
+                    Поддержка
+                </button>
+            </div>
+        </section>
 
-    <section class="features-section">
-        <p class="why-sacred">Почему Sacred ?</p>
-        <h1 class="features-title">Мы предоставляем только лучшие функции.</h1>
-        <p class="features-description">Всё, что нужно для идеального опыта</p>
-        <div class="features-list">
-            <div class="features-card">
-                <div class="card-header">
-                    <span class="card-num">01</span>
-                    <span class="card-icon"><i class="fa-brands fa-airbnb"></i></span>
+        <section class="features-section">
+            <p class="why-sacred animate-text">Почему Sacred ?</p>
+            <h1 class="features-title animate-text">Мы предоставляем только лучшие функции.</h1>
+            <p class="features-description animate-text">Всё, что нужно для идеального опыта</p>
+            <div class="features-list">
+                <div class="features-card animate-box slide-left">
+                    <div class="card-header">
+                        <span class="card-num">01</span>
+                        <span class="card-icon"><i class="fa-brands fa-airbnb"></i></span>
+                    </div>
+                    <p class="card-title">Обновления</p>
+                    <span class="card-db">Регулярные обновления, свежие обходы для лучшей игры.</span>
                 </div>
-                <p class="card-title">Обновления</p>
-                <span class="card-db">Регулярные обновления, свежие обходы для лучшей игры.</span>
-            </div>
-            <div class="features-card">
-                <div class="card-header">
-                    <span class="card-num">02</span>
-                    <span class="card-icon"><i class="fa-regular fa-eye"></i></span>
+                <div class="features-card animate-text">
+                    <div class="card-header">
+                        <span class="card-num">02</span>
+                        <span class="card-icon"><i class="fa-regular fa-eye"></i></span>
+                    </div>
+                    <p class="card-title">Красивый и удобный интерфейс</p>
+                    <span class="card-db">Никаких сложностей и поисков функций.</span>
                 </div>
-                <p class="card-title">Красивый и удобный интерфейс</p>
-                <span class="card-db">Никаких сложностей и поисков функций.</span>
-            </div>
-            <div class="features-card">
-                <div class="card-header">
-                    <span class="card-num">03</span>
-                    <span class="card-icon"><i class="fa-solid fa-headset"></i></span>
+                <div class="features-card animate-box slide-right">
+                    <div class="card-header">
+                        <span class="card-num">03</span>
+                        <span class="card-icon"><i class="fa-solid fa-headset"></i></span>
+                    </div>
+                    <p class="card-title">Поддержка</p>
+                    <span class="card-db">Команда всегда готова помочь с настройкой и вопросами по функционалу.</span>
                 </div>
-                <p class="card-title">Поддержка</p>
-                <span class="card-db">Команда всегда готова помочь с настройкой и вопросами по функционалу.</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta-section">
-        <div class="cta">
-            <h1 class="cta-title">Играй и разваливай с Sacred</h1>
-            <p class="cta-description">Купив наш клиент, мы можем с уверенностью сказать, что вы больше не подумаете о
-                покупке другого продукта</p>
-            <div class="cta-button-actions">
-                <button class="btn-sup">Связаться с поддержкой <span class="cta-icon"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></span></button>
-                <button class="cta-btn-fill">Начать играть <span class="cta-icon"><i
-                            class="fa-solid fa-arrow-up-right-from-square"></i></span></button>
+        <section class="cta-section">
+            <div class="cta">
+                <h1 class="cta-title">Играй и разваливай с Sacred</h1>
+                <p class="cta-description">Купив наш клиент, мы можем с уверенностью сказать, что вы больше не подумаете
+                    о
+                    покупке другого продукта</p>
+                <div class="cta-button-actions">
+                    <button class="btn-sup">Связаться с поддержкой <span class="cta-icon"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span></button>
+                    <button class="cta-btn-fill">Начать играть <span class="cta-icon"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></span></button>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <footer>
-
+        <div class="links-wrap">
+            <div class="links-column">
+                <div class="links-header">
+                    <span><i class="fa-solid fa-house-chimney-crack"></i></span>
+                    <span>Pages</span>
+                </div>
+                <div class="links-btn">
+                    <a href="index.html">Home</a>
+                    <a href="#">Products</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="links-column">
+                <div class="links-header">
+                    <span><i class="fa-regular fa-user"></i></span>
+                    <span>Account</span>
+                </div>
+                <div class="links-btn">
+                    <a href="#">Sign In</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+            <div class="links-column">
+                <div class="links-header">
+                    <div class="links-header">
+                        <span><i class="fa-brands fa-bluesky"></i></span>
+                        <span>Social Media</span>
+                    </div>
+                    <div class="links-btn">
+                        <a href="#"><span><i class="fa-regular fa-envelope"></i></span> Email</a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                        <a href="https://discord.gg/ZBNjKbmFX2"><i class="fa-brands fa-discord"></i> Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="all-rights">© Sacred, 2026. All rights reserved.</p>
     </footer>
+
+
+
     <script src="assets/js/main.js"></script>
 </body>
 
